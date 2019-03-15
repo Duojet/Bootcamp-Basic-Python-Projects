@@ -58,6 +58,81 @@ def nice_mean(nice,mean,name):
     score(nice,mean,name) # pass the 3 variables to the score()
 
 
+
+def show_score(nice,mean,name):
+    print("\n{}, your current total: \n({}, Nice) and ({}, Mean)".format(name,nice,mean))
+
+
+
+def score(nice,mean,name):
+     #score function is being passed the values stored within the 3 variables
+    if nice > 2:    # if condition is valid, call win function, passing in the variables so it can use them
+        win(nice,mean,name)
+    if mean > 2:    # if condition is valid, call lose function, passing in the variables so it can use them
+        lose(nice,mean,name)
+    else:           # else, call nice_mean function passing in the variables so it can use them
+        nice_mean(nice,mean,name)
+
+
+
+def win(nice,mean,name)
+    # Substitute the {} wildcards with our variable values
+    print("\nNice job, {}.  You win!  \\nEveryone loves you and you've \nmand a lot of friends along the way!".format(name))
+    # call again function and pass in our variable
+    again(nice,mean,name)
+
+def again(nice,mean,name):
+    stop = True
+    choice = input("\nDo you want to play again? (y/n):\n>>> ").lower()
+    if choice == "y":
+        stop = False
+        reset(nice,mean,name)
+    if choice == "n"
+        print("\nOh, so sad. Sorry to see you go!")
+        stop = False
+        quit()
+    else:
+        print("]nEnter ( Y ) for 'YES', ( N ) for 'NO':\n>>>")
+
+
+
+
+
+
+##def lose(nice,mean,name)
+##    # Substitute the {} wildcards with our variable values
+##    print("\nNice job, {}.  You win!  \\nEveryone loves you and you've \nmand a lot of friends along the way!".format(name))
+##    # call again function and pass in our variable
+##    again(nice,mean,name)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
 
 
