@@ -21,24 +21,24 @@ class ParentWindow(Frame):
 
         
 # build buttons
-        self.btn_add = tk.Button(self.master,width=13,height=1,text="Browse...", font=("sans-serif", "12", "bold"))
-        self.btn_add.grid(row=8,column=0,padx=(25,25),pady=(35,0))
+        self.btn_add = tk.Button(self.master,width=14,height=1,text="Browse...", font=("sans-serif", "12"))
+        self.btn_add.grid(row=1,column=0,padx=(25,25),pady=(75,10))
 
-        self.btn_add = tk.Button(self.master,width=13,height=1,text="Browse...", font=("sans-serif", "12", "bold"))
-        self.btn_add.grid(row=9,column=0,padx=(25,25),pady=(15,0))
+        self.btn_add = tk.Button(self.master,width=14,height=1,text="Browse...", font=("sans-serif", "12"))
+        self.btn_add.grid(row=2,column=0,padx=(25,25),pady=(15,10))
 
-        self.btn_add = tk.Button(self.master,width=13,height=2,text="Check for files...", font=("sans-serif", "12", "bold"))
-        self.btn_add.grid(row=10,column=0,padx=(25,25),pady=(15,0))
+        self.btn_add = tk.Button(self.master,width=14,height=2,text="Check for files...", font=("sans-serif", "12"))
+        self.btn_add.grid(row=3,column=0,padx=(25,25),pady=(15,5))
 
-        self.btn_add = tk.Button(self.master,width=13,height=2,text="Close Program", font=("sans-serif", "12", "bold"))
-        self.btn_add.grid(row=10,column=3,padx=(0,25),pady=(15,0))
+        self.btn_add = tk.Button(self.master,width=14,height=2,text="Close Program", font=("sans-serif", "12"))
+        self.btn_add.grid(row=3,column=3,padx=(335,0),pady=(15,5))
         
 # build Entry form objects - call widget/ text boxes
-        self.txt_browse1 = tk.Entry(self.master,text="", font=("sans-serif","12"))
-        self.txt_browse1.grid(row=8, column=1, columnspan=3, padx=(0,0),pady=(35,0))
+        self.txt_browse1 = tk.Entry(self.master,width=43,text="", font=("sans-serif","14"))
+        self.txt_browse1.grid(row=1, column=1, columnspan=3, padx=(15,0),pady=(75,0))
         
-        self.txt_browse2 = tk.Entry(self.master,text="", font=("sans-serif","12"))
-        self.txt_browse2.grid(row=9, column=1, columnspan=3, padx=(0,0),pady=(0,0))
+        self.txt_browse2 = tk.Entry(self.master,width=43,text="", font=("sans-serif","14"))
+        self.txt_browse2.grid(row=2, column=1, columnspan=3, padx=(15,0),pady=(15,0))
 
 
         
