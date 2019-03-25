@@ -25,7 +25,7 @@ class ParentWindow(Frame):
         self.master = master
         self.master.resizable(width=False, height=False)
         self.master.geometry('{}x{}'.format(1000,250))
-        page123drill_func.center_window(self,1000,250)
+
         self.master.title("Folder Selector")
 
         page123drill_gui.load_gui(self)
