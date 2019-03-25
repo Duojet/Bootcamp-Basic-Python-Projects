@@ -14,9 +14,9 @@
 
 from tkinter import *
 import tkinter as tk
+import tkinter.filedialog as tkFileDialog
 
-import page123drill_gui
-import page123drill_func
+
 
 
 class ParentWindow(Frame):
@@ -28,9 +28,20 @@ class ParentWindow(Frame):
 
         self.master.title("Path Revealer")
 
-        page123drill_gui.load_gui(self)
-        
+    
+        self.btnBrowse = tk.Button(self.master,width=14,height=1,text="Find Directory Path", command = searchDir)
+        self.btnBrowse.grid(row=1,column=0, padx=(25,25),pady=(45,25))
 
+        self.txtBrowse = tk.Entry(self.master, textvariable = btnSearch, width=70, font=("sans-serif","14"))
+        self.txtBrowse.grid(row=2, column=1,padx=(0,0),pady=(25,25))
+
+    def searchDir(self):
+        btnSearch = tkFileDialog.askdirectory()
+        return(btnSearch)
+
+
+
+        
 
 if __name__ == "__main__":
     root = tk.Tk()
