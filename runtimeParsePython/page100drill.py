@@ -13,7 +13,7 @@
 import os
 
 def getPath():
-    fPath = 'C:\\GitRepositories\\Bootcamp-Basic-Python-Projects\\page100drill\\FolderA'
+    fPath = 'C:\GitRepositories\Bootcamp-Basic-Python-Projects\runtimeParsePython\FolderA'
     items = os.listdir(fPath)
     itemList = []
     for names in items:
