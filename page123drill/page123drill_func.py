@@ -7,11 +7,12 @@ import page123drill_gui
 
 
 
+
+
 def searchDir(self):
     btnSearch = tkFileDialog.askdirectory()
-    return(btnSearch)
-
-
+    print(btnSearch)
+    self.txtBrowse.insert(END,btnSearch)
 
 
 
